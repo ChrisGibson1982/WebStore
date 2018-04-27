@@ -12,6 +12,9 @@ LABEL version="1.0.4"
 
 RUN pip install flask
 
+COPY files/ .
 
 
-EXPOSE 80
+EXPOSE 5000
+
+CMD [ "python", "./FlaskApp/app.py" ]
